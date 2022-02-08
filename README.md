@@ -1,6 +1,6 @@
 # Nuxt Burn Work 🔥
 
-Demo: [burnwork.netlify.app](burnwork.netlify.app)
+Demo: [burnwork.netlify.app](https://burnwork.netlify.app)
 
 - Basic Nuxt 2 + [typescript](https://pinia.vuejs.org/)
 - [Composition Api](https://composition-api.nuxtjs.org/)
