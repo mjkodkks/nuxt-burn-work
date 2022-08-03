@@ -6,8 +6,8 @@
         {{ count }}
       </div>
       <div class="mt-4">
-        <v-btn @click="increase">ADD +1</v-btn>
-        <v-btn @click="reset">RESET</v-btn>
+        <v-btn color="primary" @click="increase">ADD +1</v-btn>
+        <v-btn color="error" @click="reset">RESET</v-btn>
       </div>
     </v-card>
     <v-card class="mt-4 p-4">
@@ -16,7 +16,7 @@
         </v-btn>
       </div>
       <ul>
-        <li class="text-3xl font-bold underline"> {{ catFact ? catFact.text : '-' }}</li>
+        <li class="text-3xl font-bold underline text-h1"> {{ catFact ? catFact.text : '-' }}</li>
       </ul>
     </v-card>
   </div>
