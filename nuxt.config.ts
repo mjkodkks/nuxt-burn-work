@@ -45,6 +45,7 @@ const config: NuxtConfig = {
       // https://go.nuxtjs.dev/typescript
       '@nuxt/typescript-build',
       // https://go.nuxtjs.dev/vuetify
+      '@nuxt/postcss8',
       '@nuxtjs/vuetify',
       '@nuxtjs/composition-api/module',
       ['@pinia/nuxt', { disableVuex: true }],
@@ -84,6 +85,12 @@ const config: NuxtConfig = {
   
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
+      postcss: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
     },
   
     publicRuntimeConfig: {

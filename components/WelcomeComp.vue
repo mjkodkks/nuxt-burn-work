@@ -1,21 +1,25 @@
 <template>
-  <v-card class="w-full pa-8">
-    {{ welcome }}
-    <v-card>
-      {{ count }}
+  <div>
+    <v-card class="w-full p-4">
+      {{ welcome }}
+      <div class="text-2xl mt-4">
+        {{ count }}
+      </div>
+      <div class="mt-4">
+        <v-btn @click="increase">ADD +1</v-btn>
+        <v-btn @click="reset">RESET</v-btn>
+      </div>
     </v-card>
-    <v-btn @click="increase">ADD +1</v-btn>
-    <v-btn @click="reset">RESET</v-btn>
-    <div>Example Fetch API <v-btn icon small @click="getCatFact">
-        <v-icon small>mdi-reload</v-icon>
-      </v-btn>
-    </div>
-    <div>
+    <v-card class="mt-4 p-4">
+      <div>Example Fetch API <v-btn icon small @click="getCatFact">
+          <v-icon small>mdi-reload</v-icon>
+        </v-btn>
+      </div>
       <ul>
-        <li> {{ catFact ? catFact.text : '-' }}</li>
+        <li class="text-3xl font-bold underline"> {{ catFact ? catFact.text : '-' }}</li>
       </ul>
-    </div>
-  </v-card>
+    </v-card>
+  </div>
 </template>
 
 <script lang="ts">

@@ -1,9 +1,8 @@
 <template>
   <v-container fluid>
-    <v-row justify="center" align="center">
+    <v-row class="justify-center items-center">
       <v-col cols="12" sm="8" md="6">
-        Frist page
-        <Welcome></Welcome>
+        <WelcomeComp></WelcomeComp>
       </v-col>
     </v-row>
   </v-container>
@@ -13,14 +12,11 @@
 import {
   defineComponent,
 } from '@nuxtjs/composition-api'
+import WelcomeComp from '~/components/WelcomeComp.vue'
 export default defineComponent({
-  layout: 'index',
-  setup() {
-
-
-    return {
-
-    }
-  },
+    layout: "index",
+    setup() {
+        return {};
+    },
 })
 </script>
