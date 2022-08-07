@@ -6,6 +6,7 @@ Demo: [burnwork.netlify.app](https://burnwork.netlify.app)
 - [Composition Api](https://composition-api.nuxtjs.org/)
 - [Vuetify](https://vuetifyjs.com/en/)
 - [Pinia](https://pinia.vuejs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
 
 ## Build Setup
 
